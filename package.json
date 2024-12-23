@@ -15,9 +15,9 @@
   },
   "license": "MIT",
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
   "files": [
     "src",
     "dist",
@@ -28,7 +28,7 @@
     "build": "rimraf ./dist && tsc",
     "build-publish": "rimraf ./dist && tsup --config tsup.config.ts",
     "docs": "typedoc",
-    "publish-package": "pnpm run build-publish && cp package.json ./dist && pnpm publish ./dist"
+    "publish-package": "pnpm run build-publish && cp package.json ./dist && npm publish ./dist"
   },
   "dependencies": {
     "@maplibre/maplibre-gl-style-spec": "^19.2.1",
