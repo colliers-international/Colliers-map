@@ -1,3 +1,4 @@
+// @ts-ignore
 import type GeoJSON from 'geojson';
 
 /* Data types that are compatible with both mapbox and maplibre. Not exposed to the end user. */
