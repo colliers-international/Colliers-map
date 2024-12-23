@@ -1,7 +1,7 @@
 export * from './common';
 export * from './lib';
 export * from './events';
-
+// @ts-ignore
 import type GeoJSON from 'geojson';
 import type {CustomSourceImplementation} from './lib';
 
