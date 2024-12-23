@@ -1,0 +1,10 @@
+{
+    "entryPoints": ["src/colliers/index.tsx"],          // Set to the folder where your components are located
+    "out": "docs",      
+    "plugin": ["typedoc-plugin-markdown"],             // Output folder for the generated docs
+    "exclude": ["**/*.test.tsx"],    // Exclude test files if needed
+    "excludeExternals": true,        // Exclude external libraries
+    "excludePrivate": true,          // Exclude private members
+    "includeVersion": true         // Include version in documentation
+  }
+  
