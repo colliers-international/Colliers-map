@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@maplibre/maplibre-gl-style-spec': ^19.2.1
   '@types/mapbox-gl': '>=1.0.0'
+  '@types/node': ^22.10.2
   '@types/react': ^16.0.0
   jsdom: ^16.5.0
   mapbox-gl: ^2.14.0
@@ -26,11 +27,12 @@ dependencies:
   typedoc-plugin-markdown: 4.3.3_typedoc@0.27.5
 
 devDependencies:
+  '@types/node': 22.10.2
   '@types/react': 16.14.62
   jsdom: 16.7.0
   mapbox-gl: 2.15.0
   maplibre-gl: 2.4.0
-  ocular-dev-tools: 2.0.0-alpha.15
+  ocular-dev-tools: 2.0.0-alpha.15_@types+node@22.10.2
   pre-commit: 1.2.2
   react: 18.3.1
   react-dom: 18.3.1_react@18.3.1
@@ -8741,7 +8743,7 @@ packages:
     resolution: {integrity: sha512-fZ4qZdQ2nxJvtcasX7Ghl+WlWS/d9IgnBIwFZXVNNZUmzpno91SX5bc5vuxiuKoCtK78XxGGNuSCrDC7xYB3OQ==}
     dev: true
 
-  /ocular-dev-tools/2.0.0-alpha.15:
+  /ocular-dev-tools/2.0.0-alpha.15_@types+node@22.10.2:
     resolution: {integrity: sha512-3+8CNM5D608PBXiEGM6FDFclPcMYtCBxNPPjUqrbwEJiEcmuv4dgl7xdkoZqAvOkIuQ4gPDdozS5o6ddxk8fqQ==}
     engines: {node: '>= 14.8'}
     hasBin: true
@@ -8787,11 +8789,11 @@ packages:
       prettier-check: 2.0.0_prettier@2.4.1
       tape: 4.17.0
       tape-promise: 4.0.0
-      ts-node: 10.9.2_typescript@4.6.4
+      ts-node: 10.9.2_k7zfvkorsgbceq77c6i2g42uiu
       tsconfig-paths: 4.2.0
       typescript: 4.6.4
       url: 0.11.4
-      vite: 4.5.5
+      vite: 4.5.5_@types+node@22.10.2
       vite-plugin-html: 3.2.2_vite@4.5.5
     transitivePeerDependencies:
       - '@octokit/core'
@@ -10955,7 +10957,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
-  /ts-node/10.9.2_typescript@4.6.4:
+  /ts-node/10.9.2_k7zfvkorsgbceq77c6i2g42uiu:
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -10974,6 +10976,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
+      '@types/node': 22.10.2
       acorn: 8.14.0
       acorn-walk: 8.3.4
       arg: 4.1.3
@@ -11437,10 +11440,10 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.5.5
+      vite: 4.5.5_@types+node@22.10.2
     dev: true
 
-  /vite/4.5.5:
+  /vite/4.5.5_@types+node@22.10.2:
     resolution: {integrity: sha512-ifW3Lb2sMdX+WU91s3R0FyQlAyLxOzCSCP37ujw0+r5POeHPwe6udWVIElKQq8gk3t7b8rkmvqC6IHBpCff4GQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -11468,6 +11471,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 22.10.2
       esbuild: 0.18.20
       postcss: 8.4.49
       rollup: 3.29.5
