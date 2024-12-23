@@ -13,6 +13,7 @@
   "include":[
     "examples/**/*",
     "src/**/*",
-    "test/**/*"
+    "test/**/*",
+    "tsup.config.ts"
   ]
 }
