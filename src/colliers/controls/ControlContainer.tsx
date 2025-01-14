@@ -42,7 +42,7 @@ export function ControlContainer({ position, children, orientation, style = {} }
         zIndex: 15,
         display: 'flex',
         justifyContent: 'center',
-        gap: '8px',
+        gap: '6px',
         ...style
       }}>
         {React.Children.map(children, (child, index) => React.cloneElement(child, { index, position, orientation }))}
