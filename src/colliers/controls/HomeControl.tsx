@@ -15,11 +15,11 @@ export function HomeControl({ initialPosition }: { initialPosition: MapPosition 
 
   const handleClick = () => {
     if (position) {
-      const { bearing, center, pitch, zoom } = position;
-      map?.setBearing(bearing);
-      map?.setCenter(center);
-      map?.setZoom(zoom);
-      map?.setPitch(pitch);
+      map.flyTo({
+        ...position,
+        duration: 2000,
+        essential: true,
+      });
     }
   }
 

@@ -7,28 +7,31 @@ import { useMap } from '../..';
 export type controlPosition = 'top-right' | 'bottom-left' | 'bottom-right' | 'top-left'
 
 export interface ControlContainerProps {
-    position: controlPosition;
-    children: any;
-    orientation: 'horizontal' | 'vertical';
-    keepPopupOpen?: boolean;
-    closePopup?: () => void;
-    style?: React.CSSProperties | undefined;
+  position: controlPosition;
+  children: any;
+  orientation: 'horizontal' | 'vertical';
+  keepPopupOpen?: boolean;
+  closePopup?: () => void;
+  style?: React.CSSProperties | undefined;
 }
 
 export function ControlContainer({ position, children, orientation, style = {} }: ControlContainerProps) {
   const [mpLogo, setMpLogo] = useState(false)
+  const [mpCompact, setMapCompact] = useState(false)
   const { current: map } = useMap();
 
   useMemo(() => {
     map?.once('idle', () => {
       const mapboxlogo = document.getElementsByClassName('mapboxgl-ctrl-logo');
+      const mapboxCompact = document.getElementsByClassName('mapboxgl-compact');
       setMpLogo(Boolean(mapboxlogo.length))
+      setMapCompact(Boolean(mapboxCompact.length))
     })
   }, [map])
 
   const stylePosition = {
     top: position.includes('top') ? 10 : undefined,
-    bottom: position.includes('bottom') ? mpLogo ? '30px' : '10px' : undefined,
+    bottom: position.includes('bottom') ? mpLogo ? '30px' : mpCompact ? '50px' : '10px' : undefined,
     left: position.includes('left') ? 10 : undefined,
     right: position.includes('right') ? 10 : undefined,
   }
