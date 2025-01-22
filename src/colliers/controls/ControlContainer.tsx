@@ -31,7 +31,7 @@ export function ControlContainer({ position, children, orientation, style = {} }
 
   const stylePosition = {
     top: position.includes('top') ? 10 : undefined,
-    bottom: position.includes('bottom') ? mpCompact ? '50px' : mpLogo ? '30px' : '10px' : undefined,
+    bottom: position.includes('bottom') ? mpCompact ? '45px' : mpLogo ? '30px' : '10px' : undefined,
     left: position.includes('left') ? 10 : undefined,
     right: position.includes('right') ? 10 : undefined,
   }
